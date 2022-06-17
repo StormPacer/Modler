@@ -1,2 +1,1 @@
-# modler
-An autoclick-like app for installing Beat Saber mods from GitHub
+# Modler is currently in it's testing phase!
