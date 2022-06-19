@@ -30,7 +30,7 @@ Then paste that path in `customDirectory.txt`, save the file and you're done. Yo
 
 ![ENOENT](https://raw.githubusercontent.com/StormPacer/Modler/main/images/error.png)
 
-If you see this error it means you ran `modler.exe` on it's own and it didn't give out an error message because `customDirectory.txt` has already been created. To fix it, follow the [Custom Directory](https://github.com/StormPacer/Modler#if-you-see-the-following) instructions.
+If you see this error it means you ran `modler.exe` on it's own and it gave out an error message because `customDirectory.txt` has already been created. To fix it, follow the [Custom Directory](https://github.com/StormPacer/Modler#if-you-see-the-following) instructions.
 
 #
 
