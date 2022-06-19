@@ -16,7 +16,7 @@ Modler is a simple oneclick-like mod installer for Beat Saber mods from Github.
 Now that you've installed everything, you should see an "install mod" button at the top right of any repository. When you press it you will be prompted to open `Windows Command Processor`. When you open it, the app will run and install your mod straight to your Beat Saber directory.
 
 ### IF YOU SEE THE FOLLOWING:
-![customDirectory](https://raw.githubusercontent.com/StormPacer/Modler/main/images/customDirectory.png)
+![customDirectory](https://raw.githubusercontent.com/StormPacer/Modler/main/images/beatSaberDirectory.png)
 
 Simply copy paste the path to AppData in your windows search bar and open `customDirectory.txt`. Navigate to your custom Beat Saber directory and copy the path to it by clicking on the path in the top:
 
