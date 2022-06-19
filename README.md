@@ -2,11 +2,12 @@
 Modler is a simple oneclick-like mod installer for Beat Saber mods from Github.
 
 # Installation
+### PC/laptop based
 1. Unpack `modler.zip` from [releases](https://github.com/StormPacer/Modler/releases/latest) in a separate folder. **THE FOLDER SHOULD NOT CONTAIN ANY SPACES IN IT'S NAME!**
 2. Run `registerProtocol.exe`. This will make a new protocol on your PC/laptop so modler can be opened straight from the browser.
-3. Install a userscript manager. It can be either [ViolentMonkey](https://violentmonkey.github.io/get-it/) or [TamperMonkey](https://www.tampermonkey.net/).
-4. Install the modler userscript from [GreasyFork](https://greasyfork.org/en/scripts/446675-modler).
-5. Done!
+### Browser based
+1. Install a userscript manager. It can be either [ViolentMonkey](https://violentmonkey.github.io/get-it/) or [TamperMonkey](https://www.tampermonkey.net/).
+2. Install the modler userscript from [GreasyFork](https://greasyfork.org/en/scripts/446675-modler).
 
 # Usage
 Now that you've installed everything, you should see an "install mod" button at the top right of any repository. When you press it you will be prompted to open `Windows Command Processor`. When you open it, the app will run and install your mod straight to your Beat Saber directory.
