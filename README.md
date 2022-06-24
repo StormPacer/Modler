@@ -5,9 +5,9 @@ Modler is a simple oneclick-like mod installer for Beat Saber mods from Github.
 ### PC/laptop part
 1. Unpack `modler.zip` from [releases](https://github.com/StormPacer/Modler/releases/latest) in a separate folder. **THE FOLDER SHOULD NOT CONTAIN ANY SPACES IN IT'S NAME!**
 
-**DON'T RUN MODLER.EXE ON IT'S OWN!**
+2. Run `modler.exe`. This will make a new protocol on your PC/laptop so modler can be opened straight from the browser. 
 
-2. Run `registerProtocol.exe`. This will make a new protocol on your PC/laptop so modler can be opened straight from the browser.
+**ONLY RUN IT ONCE!**
 ### Browser part
 1. Install a userscript manager. It can be either [ViolentMonkey](https://violentmonkey.github.io/get-it/) or [TamperMonkey](https://www.tampermonkey.net/).
 2. Install the modler userscript from [GreasyFork](https://greasyfork.org/en/scripts/446675-modler).
@@ -30,7 +30,7 @@ Then paste that path in `customDirectory.txt`, save the file and you're done. Yo
 
 ![ENOENT](https://raw.githubusercontent.com/StormPacer/Modler/main/images/error.png)
 
-If you see this error it means you ran `modler.exe` on it's own and it gave out an error message because `customDirectory.txt` has already been created. To fix it, follow the [Custom Directory](https://github.com/StormPacer/Modler#if-you-see-the-following) instructions.
+If you see this error it means you ran `modler.exe` again and it gave out an error message because `customDirectory.txt` has already been created. To fix it, follow the [Custom Directory](https://github.com/StormPacer/Modler#if-you-see-the-following) instructions.
 
 #
 
