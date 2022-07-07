@@ -16,7 +16,7 @@ async function Modler() {
                 try {
                     const dir = String(fs.readFileSync(`${process.env.APPDATA}\\modler\\customDirectory.txt`))
                     return new Promise((resolve, reject) => {
-                        return resolve(dir.replace("\\", "\\\\"))
+                        return resolve(dir)
                     })
                 } catch (err) {
                     return new Promise((resolve, reject) => {
@@ -111,6 +111,20 @@ async function Modler() {
                 fileLink = GHDATA.assets[0].browser_download_url
             }
 
+            try {
+                fs.readdirSync(`${path}\\IPA\\Pending`)
+            }
+            catch (err) {
+                console.log("Made pending folder.")
+                fs.mkdirSync(`${path}\\IPA\\Pending`)
+            }
+            try {
+                fs.readdirSync(`${path}\\IPA\\Pending\\Plugins`)
+            } catch (err) {
+                console.log("Made plugins folder.")
+                fs.mkdirSync(`${path}\\IPA\\Pending\\Plugins`)
+            }
+
             if (fileLink.endsWith(".zip")) {
 
                 async function DownloadZip() {
@@ -128,7 +142,7 @@ async function Modler() {
                         }
 
                         request.get(dat)
-                            .pipe(fs.createWriteStream(`${path}\\mod.zip`))
+                            .pipe(fs.createWriteStream(`${path}\\IPA\\Pending\\mod.zip`))
 
                             .on("close", () => {
                                 console.log("Downloaded the mod zip. Waiting to extract the mod.")
@@ -141,10 +155,10 @@ async function Modler() {
 
                 function ExtractZip() {
 
-                    fs.createReadStream(`${path}\\mod.zip`).pipe(unzipper.Extract({ path: `${path}` }))
+                    fs.createReadStream(`${path}\\IPA\\Pending\\mod.zip`).pipe(unzipper.Extract({ path: `${path}\\IPA\\Pending` }))
                         .on("close", () => {
                             console.log("Installed the mod.")
-                            fs.unlinkSync(`${path}\\mod.zip`)
+                            fs.unlinkSync(`${path}\\IPA\\Pending\\mod.zip`)
                         })
 
                         .on("error", (err) => {
@@ -169,7 +183,7 @@ async function Modler() {
                     }
 
                     request.get(dat)
-                        .pipe(fs.createWriteStream(`${path}\\Plugins\\${file}`))
+                        .pipe(fs.createWriteStream(`${path}\\IPA\\Pending\\Plugins\\${file}`))
 
                         .on("close", () => {
                             console.log("Installed the mod.")
