@@ -32,6 +32,12 @@ Then paste that path in `customDirectory.txt`, save the file and you're done. Yo
 
 If you see this error it means you ran `modler.exe` again and it gave out an error message because `customDirectory.txt` has already been created. To fix it, follow the [Custom Directory](https://github.com/StormPacer/Modler#if-you-see-the-following) instructions.
 
+### EEXIST: file already exists, mkdir
+
+![EEXIST](https://raw.githubusercontent.com/StormPacer/Modler/main/images/mkdir.png)
+
+If you see this error, you can close the popup and try installing the mod again.
+
 #
 
 If you run into any issues you can always open an issue or message me on discord: StormPacer#2871
