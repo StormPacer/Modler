@@ -41,3 +41,6 @@ If you see this error, you can close the popup and try installing the mod again.
 #
 
 If you run into any issues you can always open an issue or message me on discord: StormPacer#2871
+
+# Known issues
+- If you have a space anywhere in the path to modler, it will not run.
